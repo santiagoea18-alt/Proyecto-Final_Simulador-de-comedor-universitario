@@ -1,0 +1,101 @@
+Codigo de estudiante,Nombre Completo,Especialidad,Ubicación,Nivel Socioeconómico
+20230001A,Ana García Pérez,A1-Arquitectura,fuera de la universidad,B
+20242912J,Carlos López Ruiz,C1-Ingeniería Civil,dentro de la universidad,A
+20211392B,María Rodríguez,E1-Ingeniería Económica,fuera de la universidad,C
+20220055G,Juan Martínez,G1-Ingeniería Geológica,dentro de la universidad,A
+20234102I,Sofía Fernández,I2-Ingeniería de Sistemas,fuera de la universidad,B
+20218876L,Diego Sánchez,L1-Ingeniería Eléctrica,dentro de la universidad,C
+20241234M,Laura Gómez,M6-Ingeniería Mecatrónica,fuera de la universidad,A
+20227654N,Pedro Díaz,N6-Ciencia de la Computación,dentro de la universidad,B
+20239012P,Carmen Vásquez,P2-Ingeniería Petroquímica,fuera de la universidad,C
+20215555Q,Miguel Torres,Q1-Ingeniería Química,dentro de la universidad,A
+20243322S,Elena Ramírez,S3-Ingeniería Ambiental,fuera de la universidad,B
+20221122A,Ricardo Herrera,A2-Urbanismo,dentro de la universidad,C
+20235544E,Patricia Luna,E3-Ingeniería Estadística,fuera de la universidad,B
+20210099G,Jorge Castro,G3-Ingeniería de Minas,dentro de la universidad,A
+20246677I,Lucía Méndez,I3-Ingeniería de Software,fuera de la universidad,C
+20228833L,Roberto Vaca,L4-Ingeniería de Ciberseguridad,dentro de la universidad,B
+20237711M,Gabriel Rojas,M7-Ingeniería Aeroespacial,fuera de la universidad,A
+20212244N,Isabel Ortiz,N1-Física,dentro de la universidad,C
+20249900P,Luis Salazar,P3-Ingeniería de Petróleo y Gas Natural,fuera de la universidad,B
+20224455S,Natalia Vera,S2-Ingeniería de Higiene y Seguridad Industrial,dentro de la universidad,A
+20121763A,Carlos Ruiz Zevallos,L3-Ingeniería de Telecomunicaciones,fuera de la universidad,B
+20250012L,Ana Lucía Beltrán,L1-Ingeniería Eléctrica,dentro de la universidad,C
+20220982A,Marcos Hugo Pineda,A1-Arquitectura,dentro de la universidad,B
+20210543I,Sofía Elena Rojas,I2-Ingeniería de Sistemas,dentro de la universidad,A
+20240192L,Diego Alonso Torres,L2-Ingeniería Electrónica,dentro de la universidad,B
+20230871M,Luciana Vallejo,M6-Ingeniería Mecatrónica,fuera de la universidad,C
+20221109N,Roberto Carlos Gil,N6-Ciencia de la Computación,dentro de la universidad,A
+20210034S,Elena De la Torre,S3-Ingeniería Ambiental,fuera de la universidad,B
+20250442G,Javier Ortega Saenz,G3-Ingeniería de Minas,dentro de la universidad,C
+20240998Q,Valeria Montes,Q2-Ingeniería Textil,fuera de la universidad,A
+20220761P,Andrés Miguel Paz,P2-Ingeniería Petroquímica,dentro de la universidad,B
+20230455L,Gabriela Solís,L3-Ingeniería de Telecomunicaciones,fuera de la universidad,C
+20210122C,Fernando Rivas,C1-Ingeniería Civil,dentro de la universidad,A
+20250911E,Claudia Marcela Luna,E1-Ingeniería Económica,fuera de la universidad,B
+20240334M,Ricardo Gareca Flores,M4-Ingeniería Mecánica y Eléctrica,dentro de la universidad,C
+20220667N,Patricia Vizcarra,N2-Matemáticas,fuera de la universidad,A
+20230221I,Sebastián Quintana,I3-Ingeniería de Software,dentro de la universidad,B
+20210990A,Mónica Salvador,A2-Urbanismo,fuera de la universidad,C
+20250882L,Jorge Luis Borges,L1-Ingeniería Eléctrica,dentro de la universidad,A
+20240771G,Natalia Oreiro Ruiz,G1-Ingeniería Geológica,fuera de la universidad,B
+20240567A,Valeria Mendoza,A2-Urbanismo,dentro de la universidad,B
+20230912L,Jorge Ramírez,L1-Ingeniería Eléctrica,fuera de la universidad,C
+20220443I,Lucía Fernández,I3-Ingeniería de Software,dentro de la universidad,A
+20250118M,Kevin Guerrero,M5-Ingeniería Naval,dentro de la universidad,B
+20210776N,Claudia Ortiz,N3-Química,fuera de la universidad,C
+20240889P,Sebastián Castro,P2-Ingeniería Petroquímica,dentro de la universidad,A
+20230224Q,Daniela Vaca,Q2-Ingeniería Textil,fuera de la universidad,B
+20220557S,Ricardo Palma,S1-Ingeniería Sanitaria,dentro de la universidad,C
+20250991G,Andrea Rojas,G2-Ingeniería Metalúrgica,fuera de la universidad,A
+20210332E,Miguel Grau,E1-Ingeniería Económica,dentro de la universidad,B
+20261101L,Mateo Salas Vargas,L1-Ingeniería Eléctrica,dentro de la universidad,C
+20250822A,Sofía Lévano Ruiz,A1-Arquitectura,fuera de la universidad,B
+20240933C,Javier Pinedo Soto,C1-Ingeniería Civil,dentro de la universidad,A
+20230544E,Elena Beltrán Ramos,E3-Ingeniería Estadística,dentro de la universidad,B
+20260755G,Nicolás Farfán Cruz,G2-Ingeniería Metalúrgica,fuera de la universidad,C
+20250666I,Camila Benavides Jara,I2-Ingeniería de Sistemas,dentro de la universidad,A
+20240477L,Gabriel Mendoza Flores,L2-Ingeniería Electrónica,fuera de la universidad,B
+20230388M,Fernanda Caceres Luna,M6-Ingeniería Mecatrónica,dentro de la universidad,C
+20260299N,Santiago Rivas Plata,N6-Ciencia de la Computación,dentro de la universidad,B
+20250100P,Valeria Yupanqui Oro,P2-Ingeniería Petroquímica,fuera de la universidad,A
+20240011Q,Rodrigo Tello Vega,Q1-Ingeniería Química,dentro de la universidad,C
+20230922S,Alessandra Borda Paz,S3-Ingeniería Ambiental,fuera de la universidad,B
+20260833L,Daniel Alcántara Solís,L3-Ingeniería de Telecomunicaciones,dentro de la universidad,A
+20250744M,Martina Osorio Gallo,M7-Ingeniería Aeroespacial,dentro de la universidad,C
+20240655N,Bruno Valencia Rey,N1-Física,fuera de la universidad,B
+20230566I,Ximena Duarte Silva,I1-Ingeniería Industrial,dentro de la universidad,A
+20260477G,Oscar Arriola Montes,G3-Ingeniería de Minas,dentro de la universidad,C
+20250388L,Karla Espinoza León,L1-Ingeniería Eléctrica,fuera de la universidad,B
+20240299E,Rafael Corrales Noa,E1-Ingeniería Económica,dentro de la universidad,C
+20230100C,Monica Paredes Gil,C1-Ingeniería Civil,fuera de la universidad,A
+20261140L,Aurelio Riva Agüero,L1-Ingeniería Eléctrica,dentro de la universidad,C
+20252231M,Casandra Solari Paz,M6-Ingeniería Mecatrónica,fuera de la universidad,B
+20213322I,Belisario Tello Jara,I2-Ingeniería de Sistemas,dentro de la universidad,A
+20244413L,Dalmiro Vega Cortéz,L1-Ingeniería Eléctrica,dentro de la universidad,C
+20235504A,Eliana Zevallos Ríos,A1-Arquitectura,fuera de la universidad,B
+20266695C,Fausto Alva Orbegoso,C1-Ingeniería Civil,dentro de la universidad,A
+20227786L,Genaro Balta Montero,L2-Ingeniería Electrónica,fuera de la universidad,C
+20258877E,Hilario Cáceres Diez,E1-Ingeniería Económica,dentro de la universidad,B
+20249968G,Ismael Dávila Espino,G3-Ingeniería de Minas,fuera de la universidad,A
+20211159S,Jacinta Echevarría Sol,S3-Ingeniería Ambiental,dentro de la universidad,C
+20262240L,Karem Flores Guerra,L3-Ingeniería de Telecomunicaciones,dentro de la universidad,B
+20233331N,Lisandro Gálvez Polo,N6-Ciencia de la Computación,fuera de la universidad,A
+20224422M,Macarena Heraud Val,M7-Ingeniería Aeroespacial,dentro de la universidad,C
+20255513I,Nicanor Ísmodes Rey,I3-Ingeniería de Software,fuera de la universidad,B
+20246604P,Octavia Jurado Milla,P2-Ingeniería Petroquímica,dentro de la universidad,A
+20267795Q,Próspero Luna Victoria,Q1-Ingeniería Química,dentro de la universidad,C
+20218886L,Querubín Melgar Ugarte,L4-Ingeniería de Ciberseguridad,fuera de la universidad,B
+20239977S,Rosenda Noel Saco,S2-Ingeniería de Higiene y Seguridad Industrial,dentro de la universidad,A
+20251168G,Silvestre Ortiz Miró,G1-Ingeniería Geológica,fuera de la universidad,C
+20222259A,Teodosia Pardo Aliaga,A2-Urbanismo,dentro de la universidad,B
+20243340M,Urbano Quiroz Sala,M3-Ingeniería Mecánica,fuera de la universidad,A
+20264431L,Valeriano Rocha Bas,L1-Ingeniería Eléctrica,dentro de la universidad,C
+20235522N,Waldir Silva Santisteban,N1-Física,dentro de la universidad,B
+20216613E,Ximena Tizón Ferreyros,E3-Ingeniería Estadística,fuera de la universidad,A
+20257704I,Yago Ugarteche Blume,I1-Ingeniería Industrial,dentro de la universidad,C
+20248895P,Zulma Valdizán Ganoza,P3-Ingeniería de Petróleo y Gas Natural,fuera de la universidad,B
+20269986S,Amadeo Wong Lostaunau,S1-Ingeniería Sanitaria,fuera de la universidad,A
+20221177Q,Briseida Yepez Lasso,Q2-Ingeniería Textil,fuera de la universidad,C
+20252268L,Cipriano Zegarra Ballón,L2-Ingeniería Electrónica,dentro de la universidad,B
+20243359G,Donato Arana Goicochea,G2-Ingeniería Metalúrgica,dentro de la universidad,A
