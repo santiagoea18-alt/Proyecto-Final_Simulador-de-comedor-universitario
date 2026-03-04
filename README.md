@@ -1,16 +1,58 @@
-# Proyecto-Final_Simulador-de-comedor-universitario
-Proyecto de simulador de comedor universitario creado por
+# 🍽️ Sistema Inteligente de Gestión de Comedor Universitario
 
-*COSAR-SIMEON-ALVARO-ANDREW
+## 📖 Descripción
 
-*ELIZALDE-ADRIAZOLA-SANTIAGO-SALVADOR
+Este proyecto implementa un sistema digital para la gestión eficiente de cupos en un comedor universitario.  
 
-*SANCHEZ-GONZALES-MARCO ANTONIO
+El sistema controla el acceso de estudiantes en la franja crítica de 6:30 a.m. a 8:00 a.m., valida su presencia dentro del campus y permite la asignación dinámica de turnos con visualización en tiempo real de los cupos disponibles.
 
-*SILVESTRE-MAURICIO-ALESSANDER DEL PIERO
+Su objetivo es reducir colas innecesarias, evitar conflictos con horarios académicos y garantizar una distribución equitativa del servicio.
 
-¿TE HA PASADO QUE TE HAS DESPERTADO A LAS 6:30 DE LA MAÑANA, HAS CORRIDO AL COMEDOR Y TE HAS DADO CUENTA DE QUE, POR LLEGAR CINCO MINUTOS TARDE, TE TOCÓ UN TURNO QUE CHOCA CON TU PRIMERA CLASE? JUSTO PARA ESO DISEÑAMOS ESTE SIMULADOR EN PYTHON.
+---
 
-LA IDEA ES SENCILLA: EL SISTEMA GESTIONA LAS INSCRIPCIONES EN ESA FRANJA CRÍTICA DE 6:30 A 8:00 AM. TÚ LLEGAS A LA UNIVERSIDAD Y LA APLICACIÓN, USANDO PROGRAMACIÓN ORIENTADA A OBJETOS, PERMITE QUE EL USUARIO PUEDA ELEGIR LIBREMENTE CUALQUIER TURNO DISPONIBLE; EL SISTEMA MOSTRARÁ EN TIEMPO REAL LA CANTIDAD EXACTA DE CUPOS RESTANTES PARA EL TURNO SELECCIONADO.
+## 🚀 Características Principales
 
-ES UNA FORMA DE ELIMINAR LA INCERTIDUMBRE; EN LUGAR DE IR A CIEGAS, EL SIMULADOR TE DICE: “ERES TURNO 9 Y TE TOCA 2PM A 2:15PM". ES TECNOLOGÍA APLICADA PARA QUE NINGÚN ESTUDIANTE PIERDA EL TIEMPO EN COLAS INNECESARIAS O SE QUEDE SIN ALMUERZO POR FALTA DE INFORMACIÓN.
+- ✔ Registro automatizado por código de estudiante
+- ✔ Validación de ubicación (dentro / fuera del campus)
+- ✔ Control de acceso por nivel socioeconómico y horario
+- ✔ Prevención de registros duplicados
+- ✔ Visualización de cupos disponibles por turno
+- ✔ Persistencia de datos en archivos CSV
+- ✔ Carga robusta de archivos (detección automática de separador y codificación)
+- ✔ Implementación con Programación Orientada a Objetos
+
+---
+
+## 🏗️ Arquitectura del Sistema
+
+El proyecto está dividido en dos módulos principales:
+
+### 1️⃣ Sistema de Asistencia
+- Controla el flujo de ingreso y salida del estudiante.
+- Actualiza su estado en tiempo real.
+- Garantiza que solo estudiantes dentro del campus puedan acceder al comedor.
+
+### 2️⃣ Sistema de Comedor
+- Verifica identidad del estudiante.
+- Aplica política de acceso por nivel socioeconómico y horario.
+- Permite seleccionar turno disponible.
+- Registra el cupo y actualiza la base de datos.
+
+---
+
+## 🛠️ Tecnologías Utilizadas
+
+- Python 3
+- Pandas
+- Tkinter (selección de archivos)
+- Manejo robusto de CSV
+- Programación Orientada a Objetos (POO)
+
+---
+
+## 📂 Requisitos
+
+Instalar dependencias necesarias:
+
+```bash
+pip install pandas
