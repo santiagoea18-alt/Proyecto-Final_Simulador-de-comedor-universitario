@@ -56,5 +56,4 @@ Instalar dependencias necesarias:
 
 ```bash
 pip install pandas
-```bash
 pip install Pillow
