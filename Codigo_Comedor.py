@@ -1,89 +1,44 @@
 import pandas as pd
-
 from datetime import datetime
-
 import os
-
 import tkinter as tk
-
 from tkinter import filedialog, Toplevel, Label
-
 from PIL import Image, ImageTk  # Requiere: pip install Pillow
-
 import unicodedata
 
-
-
 def normalizar_encabezado(texto):
-
     if not isinstance(texto, str): return texto
-
     texto = unicodedata.normalize('NFKD', texto).encode('ascii', 'ignore').decode('utf-8')
-
     return texto.lower().strip()
 
-
-
 class Estudiante:
-
     def __init__(self, codigo, nombre, especialidad, ubicacion, nivel):
-
         self.codigo = str(codigo).strip()
-
         self.nombre = nombre
-
         self.especialidad = especialidad
-
         self.ubicacion = str(ubicacion).strip().lower()
-
         self.nivel = str(nivel).strip().upper()
-
-
-
-class SistemaComedor:
-
-    def __init__(self, archivo_alumnos, archivo_turnos, ruta_menu):
-
-        self.archivo_alumnos = archivo_alumnos
-
-        self.archivo_turnos = archivo_turnos
-
-        self.ruta_menu = ruta_menu
-
-        self.df_alumnos = self._cargar_csv_robusto(archivo_alumnos)
-
-        self.df_turnos = self._cargar_csv_robusto(archivo_turnos)
-
         
-
+class SistemaComedor:
+    def __init__(self, archivo_alumnos, archivo_turnos, ruta_menu):
+        self.archivo_alumnos = archivo_alumnos
+        self.archivo_turnos = archivo_turnos
+        self.ruta_menu = ruta_menu
+        self.df_alumnos = self._cargar_csv_robusto(archivo_alumnos)
+        self.df_turnos = self._cargar_csv_robusto(archivo_turnos)
         self.horarios = {
-
             1: "12:00-12:15", 2: "12:15-12:30", 3: "12:30-12:45",
-
             4: "12:45-13:00", 5: "13:00-13:15", 6: "13:15-13:30",
-
             7: "13:30-13:45", 8: "13:45-14:00", 9: "14:00-14:15",
-
             10: "14:15-14:30"
-
         }
 
-
-
     def _cargar_csv_robusto(self, ruta):
-
         try:
-
             df = pd.read_csv(ruta, sep=None, engine='python', encoding='utf-8')
-
         except UnicodeDecodeError:
-
             df = pd.read_csv(ruta, sep=None, engine='python', encoding='latin1')
-
-        
-
         mapeo = {}
-
         for col in df.columns:
 
             norm = normalizar_encabezado(col)
@@ -100,98 +55,52 @@ class SistemaComedor:
 
         return df.rename(columns=mapeo)
 
-
-
     def mostrar_imagen(self, ruta, titulo="Información", persistente=False):
-
         if not os.path.exists(ruta):
-
             print(f"⚠️ Imagen no encontrada en: {ruta}")
-
             return
-
         ventana_img = Toplevel()
-
         ventana_img.title(titulo)
-
         ventana_img.attributes("-topmost", True)
-
         try:
-
             img = Image.open(ruta)
-
             img.thumbnail((500, 500))
-
             img_tk = ImageTk.PhotoImage(img)
-
             label_img = Label(ventana_img, image=img_tk)
-
             label_img.image = img_tk 
-
             label_img.pack(padx=10, pady=10)
-
             if not persistente:
-
                 ventana_img.after(4000, ventana_img.destroy)
-
         except Exception as e:
 
             print(f"❌ Error al abrir imagen: {e}")
 
             ventana_img.destroy()
-
-
-
+            
     def ver_menu_dia(self):
-
         print("\n🖼️ Abriendo imagen del menú del día...")
-
         self.mostrar_imagen(self.ruta_menu, "Menú del Día", persistente=True)
-
-
-
     def mostrar_disponibilidad(self):
-
         print("\n--- 📊 ESTADO DE CUPOS Y HORARIOS ---")
-
         for i in range(1, 11):
-
             col = f"Turno {i}"
-
             if col in self.df_turnos.columns:
-
                 libres = 100 - self.df_turnos[col].count()
-
                 print(f"[{i}] {col} ({self.horarios[i]}): {max(0, libres)} libres")
-
-
-
+                
     def verificar_horario_nivel(self, nivel):
-
         ahora = datetime.now()
-
         t = ahora.hour * 60 + ahora.minute
-
         # C (06:30), B (07:00), A (07:30)
-
         if 390 <= t < 420: return nivel == 'C'
-
         if 420 <= t < 450: return nivel in ['B', 'C']
-
         if 450 <= t <= 480: return nivel in ['A', 'B', 'C']
-
         return False
 
-
-
     def verificar_duplicado(self, codigo):
-
         for i in range(1, 11):
-
             col = f"Turno {i}"
-
             if col in self.df_turnos.columns:
-
                 if str(codigo) in self.df_turnos[col].astype(str).values:
 
                     return col, self.horarios[i]
